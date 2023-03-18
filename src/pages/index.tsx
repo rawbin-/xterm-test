@@ -1,9 +1,13 @@
-import styles from './index.less';
+import StaticTerminal from './StaticTerminal';
 
 export default function IndexPage() {
+  const socketUrl = '';
   return (
-    <div>
-      <h1 className={styles.title}>Page index</h1>
+    <div className="kubectl-outter">
+      <div className="kubectl-inner">
+        <StaticTerminal />
+        {/* <DynamicTerminal wsUrl={socketUrl} /> */}
+      </div>
     </div>
   );
 }
